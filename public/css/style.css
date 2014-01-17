@@ -108,7 +108,7 @@ a:hover.button {
 /*  color: #FFF;*/
   font-size: 16px;
   margin: 5px auto 0 auto;
-  padding: 30px 0px 12px 10px;
+  padding: 15px 0px 12px 10px;
   width: 991px;
 }
 
@@ -116,7 +116,8 @@ a:hover.button {
   font-family: 'Chivo', helvetica, serif;
   font-weight: 700;
   font-size: 28px;
-  margin: 0 0 5px 0;
+  line-height: 12px;
+  margin: 0;
   text-align: center;
   clear: both;
 }
@@ -412,8 +413,9 @@ p.cfp {
 
 .contacts, .sponsors {
   clear: both;
-  max-width: 500px;
-  margin: auto;
+  max-width: 375px;
+  font-size: 11px;
+  margin: 30px auto 0;
   text-align: justify;
   color: #AEAEAE;
 }
@@ -454,6 +456,10 @@ p.cfp {
 .contacts a img {
   display: inline;
   opacity: 0.2;
+}
+
+.contacts a:hover {
+  text-decoration: underline;
 }
 
 .sponsors {
