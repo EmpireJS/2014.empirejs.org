@@ -1,16 +1,12 @@
 {
-  "name": "empirejs",
-  "description": "Homepage for empirejs.org",
-  "version": "0.2.7",
+  "name": "empirejs-2014",
+  "description": "Homepage for 2014.empirejs.org",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
     "url": "http://github.com/indexzero/empirejs.org.git"
   },
   "domains": [
-    "empirejs.org",
-    "empirejs.com",
-    "www.empirejs.com",
-    "www.empirejs.org",
     "2014.empirejs.com",
     "2014.empirejs.org"
   ],
@@ -21,8 +17,8 @@
   "scripts": {
     "start": "./server.js"
   },
-  "subdomain": "empirejs",
+  "subdomain": "empirejs-2014",
   "engines": {
-    "node": "v0.6.x"
+    "node": "v0.8.x"
   }
 }
