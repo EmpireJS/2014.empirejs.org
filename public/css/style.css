@@ -96,7 +96,7 @@ a:hover.button {
 }
 
 #welcome, #action, #why, #contacts {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 #welcome h1, #welcome h2 {
@@ -250,13 +250,13 @@ p.cfp {
 
 #action {
   font-family: 'Chivo', helvetica, serif;
-  margin: 0 125px 50px;
+  margin: 0 125px 0px;
   font-size: 24px;
   text-align: center;
 }
 
 #action h2 {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 #call-for div {
