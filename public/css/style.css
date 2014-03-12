@@ -189,18 +189,37 @@ p.cfp {
   margin-bottom: 20px;
 }
 
+#speakers .subheader, #sponsors .subheader {
+  border-bottom: 1px solid black;
+  display: block;
+  height: 40px;
+  margin: 0 0 20px 0;
+  padding: 0 0 0 10px;
+  width: 100%;
+}
+
+#speakers .subheader h1, #sponsors .subheader h1 {
+  color: #3097b1;
+  font-size: 48px;
+  text-align: left;
+}
+
+#sponsors .subheader h1 {
+  color: #b4d183;
+}
+
 /* 3. Modules
 ------------------------------------------------------------------ */
 
 /* !3.1 Nav */
 
 #page-nav {
-	background-color: #CFCFCF;
-	height: 0;
-	width: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
+	background-color: #FFF;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
 	overflow: hidden;
 	z-index: 1000;
 }
@@ -217,7 +236,7 @@ p.cfp {
 	*zoom: 1;
 	*display: inline;
   font-family: 'Chivo', helvetica, serif;
-/*  text-transform: uppercase;*/
+  text-transform: uppercase;
 }
 
 #page-nav li a {
@@ -287,7 +306,7 @@ p.cfp {
 
 .speakers {
   clear: both;
-  max-width: 950px;
+  max-width: 450px;
   margin: auto;
   text-align: justify;
   color: #AEAEAE;
@@ -311,6 +330,8 @@ p.cfp {
 }
 
 .speakers img {
+  width: 200px;
+  height: 200px;
   box-shadow: 1px 1px 6px black;
   moz-box-shadow: 1px 1px 6px black;
   webkit-box-shadow: 1px 1px 6px black;
@@ -415,10 +436,11 @@ p.cfp {
 
 .sponsors {
   padding-bottom: 50px;
+  text-align: center;
 }
 
-.sponsors img {
-  display: block;
+.sponsors a {
+  display: inline-block;
   margin: 0 auto;
   padding-bottom: 40px;
 }
