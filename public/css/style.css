@@ -189,7 +189,9 @@ p.cfp {
   margin-bottom: 20px;
 }
 
-#speakers .subheader, #sponsors .subheader {
+#speakers .subheader,
+#sponsors .subheader,
+#coc .subheader {
   border-bottom: 1px solid black;
   display: block;
   height: 40px;
@@ -198,10 +200,17 @@ p.cfp {
   width: 100%;
 }
 
-#speakers .subheader h1, #sponsors .subheader h1 {
+#speakers .subheader h1,
+#sponsors .subheader h1,
+#coc .subheader h1 {
   color: #3097b1;
   font-size: 48px;
   text-align: left;
+}
+
+#coc .subheader h1 {
+  color: #D03080;
+  font-size: 24pt;
 }
 
 #sponsors .subheader h1 {
@@ -306,7 +315,7 @@ p.cfp {
 
 .speakers {
   clear: both;
-  max-width: 450px;
+  max-width: 675px;
   margin: auto;
   text-align: justify;
   color: #AEAEAE;
