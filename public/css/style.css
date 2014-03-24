@@ -191,7 +191,7 @@ p.cfp {
 
 #speakers .subheader,
 #sponsors .subheader,
-#coc .subheader {
+#love .subheader {
   border-bottom: 1px solid black;
   display: block;
   height: 40px;
@@ -202,13 +202,13 @@ p.cfp {
 
 #speakers .subheader h1,
 #sponsors .subheader h1,
-#coc .subheader h1 {
+#love .subheader h1 {
   color: #3097b1;
   font-size: 48px;
   text-align: left;
 }
 
-#coc .subheader h1 {
+#love .subheader h1 {
   color: #D03080;
   font-size: 24pt;
 }
