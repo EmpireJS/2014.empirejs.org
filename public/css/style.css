@@ -110,7 +110,7 @@ a:hover.button {
 #main {
   position: relative;
 /*  color: #FFF;*/
-  font-size: 16px;
+  font-size: 18px;
   margin: 5px auto 0 auto;
   padding: 15px 0px 12px 10px;
   width: 991px;
@@ -212,7 +212,7 @@ p.cfp {
 }
 
 #hosts .subheader h1 {
-  color: #ffba42;
+  color: #f8d15f;
   font-size: 48px;
   text-align: left;
 }
@@ -227,7 +227,7 @@ p.cfp {
 }
 
 #schedule .subheader h1 {
-  color: green;
+  color: #d65357;
 }
 
 /* 3. Modules
@@ -373,46 +373,57 @@ p.cfp {
 .schedule {
   margin: 0 auto;
   position: relative;
-  border: 2px solid rgb(57, 57, 57);
-  padding: 0 100px;
+  padding: 00;
   min-height: 450px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  box-shadow: 3px 3px 10px black;
-  -webkit-box-shadow: 3px 3px 10px black;
-  -moz-box-shadow: 3px 3px 10px black;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
-
 .schedule table {
   margin: 0 auto;
 }
-
+.schedule table thead tr {
+  color: #333;
+  font-size: 22px;
+  border-bottom: 1px solid #CDCDCD;
+}
+.schedule table tr {
+  height: 75px;
+}
 .schedule table tr td {
   padding: 10px 0 10px 20px;
-  border-bottom: 1px solid rgb(57, 57, 57);
+  border-bottom: 1px solid #CDCDCD;
 }
-
+.schedule table tr.break {
+  font-size: 18px;
+}
 .schedule table td tbd::after{
-  content: '-- tbd --';
+  content: 'TBD';
   color: #CCC;
   font-weight: lighter;
 }
+.schedule table tr.breakfast {
+  background-color: #FFFDF7;
+}
 .schedule table td registration::after{
-  content: 'REGISTRATION';
-  color: darkorange;
+  content: 'Registration & Breakfast';
+  color: #f8d15f;
 }
 .schedule table td breakfast::after{
-  content: 'BREAKFAST';
-  color: lightskyblue;
+  content: 'Breakfast';
+  color: #f8d15f;
+}
+.schedule table tr.lunch {
+  background-color: #FCFFF7;
 }
 .schedule table td lunch::after{
-  content: 'LUNCH';
-  color: green;
+  content: 'Lunch';
+  color: #b2cf7e;
+}
+.schedule table tr.coffee {
+  background-color: #FFF8F2;
 }
 .schedule table td coffee::after{
-  content: 'COFFEE';
-  color: chocolate;
+  content: 'Coffee Break';
+  color: #E7721F;
 }
 .schedule table td speaker::before{
   content: '\A';
@@ -427,15 +438,33 @@ p.cfp {
   color: #D03080;
   text-decoration: underline;
 }
-
-.schedule table td party::after {
-  content: 'PARTY';
-  color: red;
+.schedule table tr.party {
+  background-color: #F7FDFF;
+}
+.schedule table td party {
+  color: #2496b2;
 }
 .schedule table th {
   font-weight: bold;
   text-align: left;
   padding: 10px 0 10px 20px;
+}
+.schedule table tr:last-child {
+  color: #333;
+  font-style: italic;
+  height: auto;
+}
+.schedule table tr:last-child td {
+  border-bottom: 0px solid #FFF;
+  font-size: 22px;
+  padding: 5px 0 0 20px;
+}
+.schedule table tr:last-child img {
+  float: none;
+  clear: both;
+  width: 125px;
+  vertical-align: middle;
+  margin: 0px 6px 0px 6px;
 }
 
 .schedule tr.highlight {
