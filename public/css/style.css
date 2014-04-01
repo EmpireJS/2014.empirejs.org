@@ -191,6 +191,7 @@ p.cfp {
 
 #speakers .subheader,
 #sponsors .subheader,
+#schedule .subheader,
 #love .subheader,
 #hosts .subheader {
   border-bottom: 1px solid black;
@@ -203,6 +204,7 @@ p.cfp {
 
 #speakers .subheader h1,
 #sponsors .subheader h1,
+#schedule .subheader h1,
 #love .subheader h1 {
   color: #3097b1;
   font-size: 48px;
@@ -222,6 +224,10 @@ p.cfp {
 
 #sponsors .subheader h1 {
   color: #b4d183;
+}
+
+#schedule .subheader h1 {
+  color: green;
 }
 
 /* 3. Modules
@@ -365,11 +371,10 @@ p.cfp {
 }
 
 .schedule {
-  width: 800px;
   margin: 0 auto;
   position: relative;
   border: 2px solid rgb(57, 57, 57);
-  padding: 0 170px;
+  padding: 0 100px;
   min-height: 450px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -380,14 +385,57 @@ p.cfp {
 }
 
 .schedule table {
-  width: 800px;
   margin: 0 auto;
 }
 
 .schedule table tr td {
-  text-align: center;
   padding: 10px 0 10px 20px;
   border-bottom: 1px solid rgb(57, 57, 57);
+}
+
+.schedule table td tbd::after{
+  content: '-- tbd --';
+  color: #CCC;
+  font-weight: lighter;
+}
+.schedule table td registration::after{
+  content: 'REGISTRATION';
+  color: darkorange;
+}
+.schedule table td breakfast::after{
+  content: 'BREAKFAST';
+  color: lightskyblue;
+}
+.schedule table td lunch::after{
+  content: 'LUNCH';
+  color: green;
+}
+.schedule table td coffee::after{
+  content: 'COFFEE';
+  color: chocolate;
+}
+.schedule table td speaker::before{
+  content: '\A';
+  white-space: pre;
+}
+.schedule table td img {
+  float: left;
+  width: 35px;
+  margin: 6px 6px 0px 0px;
+}
+.schedule table td speaker > a {
+  color: #D03080;
+  text-decoration: underline;
+}
+
+.schedule table td party::after {
+  content: 'PARTY';
+  color: red;
+}
+.schedule table th {
+  font-weight: bold;
+  text-align: left;
+  padding: 10px 0 10px 20px;
 }
 
 .schedule tr.highlight {
