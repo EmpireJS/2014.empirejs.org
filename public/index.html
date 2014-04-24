@@ -25,6 +25,7 @@
           <li><a href="/#/speakers" title="Speakers">Speakers</a></li>
           <li><a href="/#/sponsors" title="Sponsors">Sponsors</a></li>
           <li><a href="/#/schedule" title="Schedule">Schedule</a></li>
+          <li><a href="/#/location" title="Location">Location</a></li>
           <li><a href="https://tito.io/empirejs/empirejs-2014" title="Tickets" target="_blank">Tickets</a></li>
           <li><a href="/#/love" title="Contacts">&lt;3</a></li>
           <li><a href="https://twitter.com/empirejs" title="Twitter" style="padding-top:30px" target="_blank"><img src="/img/twitter.png" height="20px" /></a></li>
@@ -441,6 +442,16 @@ console.log("... It’s Computer SCIENCE.");
         </div>
       </div>
 
+      <div id="location" class="content">
+        <div class="subheader">
+          <h1>Location</h1>
+        </div>
+
+        <div class="location">
+          <iframe src="https://mapsengine.google.com/map/embed?mid=zSNP0pcX1vhk.kLl4M8HVz-vw" width="990" height="500"></iframe>
+        </div>
+      </div>
+
       <div id="sponsors" class="content">
         <div class="subheader">
           <h1>Sponsors</h1>
@@ -500,6 +511,7 @@ console.log("... It’s Computer SCIENCE.");
     , '/schedule': run_route
     , '/sponsors': run_route
     , '/love': run_route
+    , '/location': run_route
     }
 
     var router = Router(routes)

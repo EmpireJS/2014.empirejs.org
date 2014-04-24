@@ -193,6 +193,7 @@ p.cfp {
 #sponsors .subheader,
 #schedule .subheader,
 #love .subheader,
+#location .subheader,
 #hosts .subheader {
   border-bottom: 1px solid black;
   display: block;
@@ -205,6 +206,7 @@ p.cfp {
 #speakers .subheader h1,
 #sponsors .subheader h1,
 #schedule .subheader h1,
+#location .subheader h1,
 #love .subheader h1 {
   color: #3097b1;
   font-size: 48px;
@@ -478,6 +480,12 @@ p.cfp {
 .schedule td.date {
   font-family: 'Chivo', helvetica, serif;
   font-size: 20px;
+}
+
+.location {
+  text-align: center;
+}
+.location iframe {
 }
 
 .contacts, .sponsors {
