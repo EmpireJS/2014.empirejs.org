@@ -232,6 +232,30 @@ p.cfp {
   color: #d65357;
 }
 
+#location .location05,
+#location .cruise,
+#location .lightbox {
+  float: left;
+  width: 30%;
+  margin: 0 1.5%;
+}
+
+#location .location05 h3,
+#location .cruise h3,
+#location .lightbox h3 {
+  color: rgb(175,175,175);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#location .location05 h4,
+#location .cruise h4,
+#location .lightbox h4 {
+  color: rgb(175,175,175);
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
 /* 3. Modules
 ------------------------------------------------------------------ */
 
