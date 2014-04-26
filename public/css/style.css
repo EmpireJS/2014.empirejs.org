@@ -418,40 +418,64 @@ p.cfp {
   padding: 10px 0 10px 20px;
   border-bottom: 1px solid #CDCDCD;
 }
-.schedule table tr.break {
-  font-size: 18px;
+.schedule table tr.break td a {
+  font-size: 14px;
+  font-style: italic;
+  text-decoration: underline;
 }
-.schedule table td tbd::after{
+.schedule table tr.breakfast td:first-child,
+.schedule table tr.lunch td:first-child,
+.schedule table tr.coffee td:first-child,
+.schedule table tr.party td:first-child  {
+  color: rgb(24, 24, 24);
+  font-size: 18px;
+  font-style: normal;
+}
+.schedule table tr.breakfast td,
+.schedule table tr.lunch td,
+.schedule table tr.coffee td,
+.schedule table tr.party td {
+  font-size: 14px;
+  font-style: italic;
+}
+.schedule table td tbd::after {
   content: 'TBD';
   color: #CCC;
   font-weight: lighter;
 }
 .schedule table tr.breakfast {
   background-color: #FFFDF7;
+  color: #f8d15f;
 }
-.schedule table td registration::after{
+.schedule table td registration::after {
+  font-style: normal;
   content: 'Registration & Breakfast';
-  color: #f8d15f;
+  font-size: 18px;
 }
-.schedule table td breakfast::after{
+.schedule table td breakfast::after {
+  font-style: normal;
   content: 'Breakfast';
-  color: #f8d15f;
+  font-size: 18px;
 }
 .schedule table tr.lunch {
   background-color: #FCFFF7;
-}
-.schedule table td lunch::after{
-  content: 'Lunch';
   color: #b2cf7e;
+}
+.schedule table td lunch::after {
+  font-style: normal;
+  content: 'Lunch';
+  font-size: 18px;
 }
 .schedule table tr.coffee {
   background-color: #FFF8F2;
-}
-.schedule table td coffee::after{
-  content: 'Coffee Break';
   color: #E7721F;
 }
-.schedule table td speaker::before{
+.schedule table td coffee::after {
+  font-style: normal;
+  content: 'Coffee Break';
+  font-size: 18px;
+}
+.schedule table td speaker::before {
   content: '\A';
   white-space: pre;
 }
@@ -466,10 +490,19 @@ p.cfp {
 }
 .schedule table tr.party {
   background-color: #F7FDFF;
-}
-.schedule table td party {
   color: #2496b2;
 }
+.schedule table td cruise::after {
+  font-style: normal;
+  content: 'Statue of Liberty Cruise';
+  font-size: 18px;
+}
+.schedule table td party::after {
+  font-style: normal;
+  content: 'Closing Party at LightBox';
+  font-size: 18px;
+}
+
 .schedule table th {
   font-weight: bold;
   text-align: left;
@@ -483,16 +516,17 @@ p.cfp {
 .schedule table tr:last-child td {
   border-bottom: 0px solid #FFF;
   font-size: 22px;
+  vertical-align: middle;
   padding: 5px 0 0 20px;
 }
-.schedule table tr:last-child img {
-  float: none;
+.schedule table tr:last-child a img {
   clear: both;
-  width: 125px;
-  vertical-align: middle;
+  display: inline-block;
+  float: none;
   margin: 0px 6px 0px 6px;
+  vertical-align: middle;
+  width: 125px;
 }
-
 .schedule tr.highlight {
   background-color: rgb(46, 46,	48);
   background-image: -moz-linear-gradient(#2a2a2a, #1c1c1c);
@@ -500,17 +534,13 @@ p.cfp {
   background-image: -webkit-linear-gradient(#2a2a2a, #1c1c1c);
   background-image: -o-linear-gradient(#2a2a2a, #1c1c1c);
 }
-
 .schedule td.date {
   font-family: 'Chivo', helvetica, serif;
   font-size: 20px;
 }
 
-.location {
-  text-align: center;
-}
-.location iframe {
-}
+.location { text-align: center; }
+.location iframe { }
 
 .contacts, .sponsors {
   clear: both;
