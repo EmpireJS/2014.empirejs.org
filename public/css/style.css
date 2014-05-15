@@ -191,7 +191,7 @@ p.cfp {
 
 #speakers .subheader,
 #sponsors .subheader,
-#schedule .subheader,
+#videos .subheader,
 #love .subheader,
 #location .subheader,
 #hosts .subheader {
@@ -205,7 +205,7 @@ p.cfp {
 
 #speakers .subheader h1,
 #sponsors .subheader h1,
-#schedule .subheader h1,
+#videos .subheader h1,
 #location .subheader h1,
 #love .subheader h1 {
   color: #3097b1;
@@ -228,7 +228,7 @@ p.cfp {
   color: #b4d183;
 }
 
-#schedule .subheader h1 {
+#videos .subheader h1 {
   color: #d65357;
 }
 
@@ -402,6 +402,7 @@ p.cfp {
   padding: 00;
   min-height: 450px;
   margin-bottom: 40px;
+  font-size: 14px;
 }
 .schedule table {
   margin: 0 auto;
@@ -415,7 +416,7 @@ p.cfp {
   height: 75px;
 }
 .schedule table tr td {
-  padding: 10px 0 10px 20px;
+  padding: 30px 0 30px 20px;
   border-bottom: 1px solid #CDCDCD;
 }
 .schedule table tr.break td a {
@@ -481,8 +482,12 @@ p.cfp {
 }
 .schedule table td img {
   float: left;
+  display: block;
   width: 35px;
   margin: 6px 6px 0px 0px;
+}
+.schedule table tr img:nth-of-type(1) {
+  clear: left;
 }
 .schedule table td speaker > a {
   color: #D03080;
@@ -503,10 +508,16 @@ p.cfp {
   font-size: 18px;
 }
 
+.schedule table td iframe {
+  float: left;
+}
 .schedule table th {
   font-weight: bold;
   text-align: left;
   padding: 10px 0 10px 20px;
+}
+.schedule table td talk > a{
+  text-decoration: underline;
 }
 .schedule table tr:last-child {
   color: #333;
@@ -520,13 +531,13 @@ p.cfp {
   padding: 5px 0 0 20px;
 }
 .schedule table tr:last-child a img {
-  clear: both;
   display: inline-block;
   float: none;
   margin: 0px 6px 0px 6px;
   vertical-align: middle;
   width: 125px;
 }
+
 .schedule tr.highlight {
   background-color: rgb(46, 46,	48);
   background-image: -moz-linear-gradient(#2a2a2a, #1c1c1c);
