@@ -1,30 +1,11 @@
 var union    = require('union'),
     ecstatic = require('ecstatic');
 
-var is2014 = /2014\./;
-
-//
-// ### redirect(res)
-// World's simplest redirect function
-//
-function redirect(res) {
-  var url  = 'http://2014.empirejs.org',
-      body = '<p>301. Redirecting to <a href="' + url + '">' + url + '</a></p>';
-
-  res.writeHead(301, { 'content-type': 'text/html', location: url });
-  res.end(body);
-}
+var port = process.env.PORT || 8080;
 
 var server = union.createServer({
   before: [
-    function (req, res) {
-      var host = req.headers.host;
-      if (process.env.NODE_ENV === 'production' && !is2014.test(host)) {
-        return redirect(res);
-      }
-
-      res.emit('next');
-    },
+    require('morgan')('combined'),
     ecstatic(__dirname + '/public'),
     function (req, res) {
       return redirect(res);
@@ -32,4 +13,7 @@ var server = union.createServer({
   ]
 });
 
-server.listen(8080);
+server.listen(port, function (err) {
+  if (err) { throw err; }
+  console.log('2014.empirejs.org running on %s', port);
+});

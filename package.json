@@ -12,6 +12,7 @@
   ],
   "dependencies": {
     "ecstatic": "0.4.13",
+    "morgan": "^1.6.1",
     "union": "0.3.8"
   },
   "scripts": {
