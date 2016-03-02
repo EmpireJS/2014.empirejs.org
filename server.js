@@ -6,10 +6,7 @@ var port = process.env.PORT || 8080;
 var server = union.createServer({
   before: [
     require('morgan')('combined'),
-    ecstatic(__dirname + '/public'),
-    function (req, res) {
-      return redirect(res);
-    }
+    ecstatic(__dirname + '/public')
   ]
 });
 
